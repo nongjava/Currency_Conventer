@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Currency Converter</title>
+</head>
+<style>
+body{
+    background: url(bg.jpg) center;
+}
+h1{
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 38px;
+    padding: 20px 1em;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-right: 35%;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+marquee{
+    background-color: aliceblue;
+    font-size: 20px;
+    padding-top: 6px;
+    margin: -23px;
+    margin-left: 35%;
+    margin-right: 35%;
+    cursor: pointer;
+}
+fieldset{
+width: 45%;
+margin: auto;
+border:1px solid #000;
+text-align: left;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+input[type=button]{
+    width: 80px;
+    height: 43px;
+    font-weight: bold;
+}
+input[type=reset]{
+    width: 95px;
+    height: 43px;
+    font-weight: bold;
+}
+
+</style>
+<script>
+function currencyConverter(valNum){
+    if(converter.bath.value <= 0 )
+    window.alert("Enter value morethan 0")
+    else
+    document.getElementById("dollar").value =(valNum/32.38).toFixed(2);
+    document.getElementById("euro").value =(valNum/35.28).toFixed(2);
+    document.getElementById("pound").value =(valNum/40.34).toFixed(2);
+    document.getElementById("yuan").value =(valNum*0.22).toFixed(2);
+    document.getElementById("won").value =(valNum*37.73).toFixed(2);
+}
+</script>
+<body>
+    <h1>Currency Converter</h1>
+    <marquee>Welcome to online Currency Converter</marquee>
+    <br><br>
+    <form name="converter">
+<fieldset>
+<label> Input currency(Bath)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input type="number" name="bath" required>
+<input type="button" value="Convert" onclick="currencyConverter(converter.bath.value)"><br><br>
+<label> Dollar(American)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="dollar"><br><br>
+<label> Euro(Europe)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="euro"><br><br>
+<label> Pound(England)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="pound"><br><br>
+<label> Yuan(China)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="yuan"><br><br>
+<label> Won(Korea)</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+<input id="won"><br><br>
+<input type="reset" value="reset form">
+<p align="center">You can press reset botton for setting the form</p>
+
+
+
+
+
+
+
+</fieldset>
+</form>
+</body>
+</html>
