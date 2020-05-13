@@ -9,7 +9,7 @@
  <div class="main"> 
       <nav>
         <div class="logo">
-           <img src = "https://ibb.co/MgWh572" height="450">
+           <img  url('https://ibb.co/MgWh572'); height="450">
           </div>
          
     </nav>
@@ -61,16 +61,16 @@
   </body>
 
   <script>
-    function currencyConverter(valNum){
+   function currencyConverter(valNum){
         if(converter.bath.value <= 0 )
         window.alert("Enter value morethan 0")
         else
-        document.getElementById("dollar").value =(valNum/32.38).toFixed(2);
-        document.getElementById("euro").value =(valNum/35.28).toFixed(2);
-        document.getElementById("pound").value =(valNum/40.34).toFixed(2);
-        document.getElementById("yuan").value =(valNum*0.22).toFixed(2);
-        document.getElementById("won").value =(valNum*37.73).toFixed(2);
-        document.getElementById("yen").value =(valNum*37.73).toFixed(2);
+        document.getElementById("dollar").value =(valNum/0.031).toFixed(2);
+        document.getElementById("euro").value =(valNum/0.029).toFixed(2);
+        document.getElementById("pound").value =(valNum/0.025).toFixed(2);
+        document.getElementById("yuan").value =(valNum0.22).toFixed(2);
+        document.getElementById("won").value =(valNum38.18).toFixed(2);
+        document.getElementById("yen").value =(valNum*3.33).toFixed(2);
     }
     </script>
 <style>.main{
