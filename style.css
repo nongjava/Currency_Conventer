@@ -1,0 +1,109 @@
+.main{
+width: 100% ;
+height: 100vh ;
+position: relative;
+overflow: hidden;;
+background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#51BBDF );
+
+}
+
+nav{
+    width: 80% ;    
+    margin: -100px  auto ;
+    z-index: 1;
+    display: flex ;
+    align-items: center;
+
+}
+
+.Bath{
+    text-align: center;
+    margin-right: 27%;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+     
+}
+
+.Dollar{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 25%;
+    margin-bottom: 20px;
+}
+
+.Euro{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 23.8%;
+    margin-bottom: 20px;
+}
+
+.Pound{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 24.3%;
+    margin-bottom: 20px;
+}
+
+.Yuan{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 23%;
+    margin-bottom: 20px;
+}
+
+.Won{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 23%;
+    margin-bottom: 20px;
+}
+
+.Yen{
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    margin-right: 22.8%;
+}
+
+
+
+
+
+
+
+.btn{
+  border: 1px solid white;
+  background: none;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px black;
+  font-family:'Balsamiq Sans', cursive ;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s; 
+  
+}
+.btn1, .btn2{
+    color: #fff ;
+}
+
+.btn1:hover,.btn2:hover{
+    color: black;
+}
+
+.container{
+    text-align: center;
+    margin-right: 25%;
+}
