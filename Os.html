@@ -1,94 +1,52 @@
 <html>
 <head>
-    <title> Currency Agent</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="animate.css">
+    <title>Currency Converter</title>
 </head>
-<body>
-    <form name="converter">
- <div class="main"> 
-
-        <div class="logo">
-            <img src="Untitled-1.png"  height="450">
-          </div>
-         
-    
-     
-    <div class="Bath">
-         Input currency(Bath) 
-        <input type="number" name="bath" required>
-    </div> 
-         
-     <div class="container">
-        <input class="btn btn1" type="button" value="Convert" onclick="currencyConverter(converter.bath.value)">
-        <input class="btn btn2" type="reset" value="reset form">
-     </div>
-      
-     <div class="Dollar">
-        Dollar:(America)
-        <input id="dollar">
-     </div> 
-
-     <div class="Euro">
-         Euro:(Europe)
-         <input id="euro">
-    </div>
-
-    <div class="Pound">
-        Pound(England)
-        <input id="pound">
-    </div>
-
-    <div class="Yuan">
-        Yuan:(China)
-        <input id="yuan">
-    </div>
-
-    <div class="Won">
-        Won:(Korea)
-        <input id="won">
-    </div>
-
-    <div class="Yen">
-        Yen:(Japan)
-        <input id="yen">
-    </div>
-    
-         
-
-  </div>
-</form>
-  </body>
-
-  <script>
-   function currencyConverter(valNum){
-        if(converter.bath.value <= 0 )
-        window.alert("Enter value morethan 0")
-        else
-        document.getElementById("dollar").value =(valNum/0.031).toFixed(2);
-        document.getElementById("euro").value =(valNum/0.029).toFixed(2);
-        document.getElementById("pound").value =(valNum/0.025).toFixed(2);
-        document.getElementById("yuan").value =(valNum0.22).toFixed(2);
-        document.getElementById("won").value =(valNum38.18).toFixed(2);
-        document.getElementById("yen").value =(valNum*3.33).toFixed(2);
-    }
-    </script>
-<style>.main{
-width: 100% ;
-height: 100vh ;
-position: relative;
-overflow: hidden;;
-background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#51BBDF );
-
+<style>
+body{
+      background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#51BBDF,#11E1D5 );
 }
-
-.logo{
-    width: 80% ;
-    margin: -100px  auto ;
-    z-index: 1;
-    display: flex ;
-    align-items: center;
-
+h1{
+    text-align: center;
+    font-size: 38px;
+    padding: 20px 1em;
+    font-weight: bold;
+    margin-left: 35%;
+    margin-right: 35%;
+    cursor: pointer;
+    font-family: 'Balsamiq Sans', cursive ;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black; 
+}
+marquee{
+     background-color: black;
+    font-size: 20px;
+    padding-top: 6px;
+    margin: -23px;
+    margin-left: 35%;
+    margin-right: 35%;
+    cursor: pointer;
+    color: white ;
+    font-family: 'Balsamiq Sans', cursive;
+    text-shadow: 2px 2px 5px black;
+}
+fieldset{
+width: 45%;
+margin: auto;
+border:5px solid #000;
+text-align: left;
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+input[type=button]{
+    width: 80px;
+    height: 43px;
+    font-weight: lighter;
+}
+input[type=reset]{
+    width: 95px;
+    height: 43px;
+    font-weight: lighter;
 }
 
 .Bath{
@@ -97,7 +55,7 @@ background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#5
     font-family: 'Balsamiq Sans', cursive;
     color: aliceblue;
     text-shadow: 2px 2px 5px black;
-
+     
 }
 
 .Dollar{
@@ -155,20 +113,16 @@ background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#5
 
 
 
-
-
-
-
 .btn{
   border: 1px solid white;
   background: none;
-  font-size: 20px;
+  font-size: 15px;
   text-shadow: 2px 2px 5px black;
   font-family:'Balsamiq Sans', cursive ;
   cursor: pointer;
   margin: 10px;
   transition: 0.8s; 
-
+  
 }
 .btn1, .btn2{
     color: #fff ;
@@ -181,6 +135,72 @@ background: linear-gradient(-45deg, #1A5BAE  ,#2464B6,#3374C7,#2B8DBE,#41B0D6,#5
 .container{
     text-align: center;
     margin-right: 25%;
-} </style>
-  
+}
+
+
+</style>
+<script>
+function currencyConverter(valNum){
+    if(converter.bath.value <= 0 )
+    window.alert("Enter value morethan 0")
+    else
+    document.getElementById("dollar").value =(valNum/32.38).toFixed(4);
+    document.getElementById("euro").value =(valNum/35.28).toFixed(4);
+    document.getElementById("pound").value =(valNum/40.34).toFixed(4);
+    document.getElementById("yuan").value =(valNum*0.22).toFixed(4);
+    document.getElementById("won").value =(valNum*38.24).toFixed(4);
+
+}
+</script>
+<body>
+    <h1>Currency Converter</h1>
+    <marquee>Welcome to online Currency Converter</marquee>
+    <br><br>
+    <form name="converter">
+<fieldset>
+    <div class="main"> 
+        <div class="Bath">
+         Input currency(Bath) 
+        <input type="number" name="bath" required>
+        
+     </div> 
+         
+     <div class="container">
+        <input class="btn btn1" type="button" value="Convert" onclick="currencyConverter(converter.bath.value)">
+
+        <input class="btn btn2" type="reset" value="reset form">
+     </div>
+      
+     <div class="Dollar">
+        Dollar:(America)
+        <input id="dollar">
+            
+     </div> 
+
+     <div class="Euro">
+         Euro:(Europe)
+         <input id="euro">
+    </div>
+
+    <div class="Pound">
+        Pound(England)
+        <input id="pound">
+    </div>
+
+    <div class="Yuan">
+        Yuan:(China)
+        <input id="yuan">
+    </div>
+
+    <div class="Won">
+        Won:(Korea)
+        <input id="won">
+    </div>
+
+</div>
+
+
+</fieldset>
+</form>
+</body>
 </html>
